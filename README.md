@@ -20,7 +20,7 @@ dependencies {
 ```java
 BmpEncoder.compress(Bitmap bitmap, Outputstream stream);
 ```
-[JavaDocs](https://docs.tianscar.com/android-bmp-encoder)  
+[JavaDoc](https://docs.tianscar.com/android-bmp-encoder)  
 [A simple example](library/src/androidTest/java/com/tianscar/bmpencoder/EncodeBmpInstrumentedTest.java)
 
 ## License
