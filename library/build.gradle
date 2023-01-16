@@ -9,13 +9,13 @@ ext {
     libVendorName = 'Tianscar'
 
     libVersionCode = 1
-    libGroupName = 'com.tianscar'
+    libGroupName = 'com.tianscar.android'
     libVersionName = '1.0.0'
 
     libSourceCompatibility = JavaVersion.VERSION_1_8
     libTargetCompatibility = JavaVersion.VERSION_1_8
 
-    libAndroidNamespace = 'com.tianscar.androidbmpencoder'
+    libAndroidNamespace = 'com.tianscar.android.androidbmpencoder'
     libAndroidCompileSdk = 33
     libAndroidMinSdk = 16
     libAndroidTargetSdk = 33
@@ -70,7 +70,7 @@ publishing {
     publications {
         release(MavenPublication) {
             groupId = libGroupName
-            artifactId = "${rootProject.name}"
+            artifactId = rootProject.name
             version = libVersionName
             afterEvaluate {
                 from components.release

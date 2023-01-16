@@ -12,7 +12,7 @@ repositories {
 2. Add the dependency:
 ```groovy
 dependencies {
-    implementation 'com.tianscar:android-bmp-encoder:1.0.0'
+    implementation 'com.tianscar.android:android-bmp-encoder:1.0.0'
 }
 ```
 
@@ -21,7 +21,7 @@ dependencies {
 BmpEncoder.compress(Bitmap bitmap, Outputstream stream);
 ```
 [JavaDoc](https://docs.tianscar.com/android-bmp-encoder)  
-[A simple example](library/src/androidTest/java/com/tianscar/bmpencoder/EncodeBmpInstrumentedTest.java)
+[A simple example](library/src/androidTest/java/com/tianscar/android/androidbmpencoder/test/EncodeBmpInstrumentedTest.java)
 
 ## License
 [MIT](/LICENSE) (c) Tianscar
