@@ -14,4 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "android-bmp-encoder"
 include ':library'
-include ':library'
