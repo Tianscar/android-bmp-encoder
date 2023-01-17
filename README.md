@@ -5,6 +5,7 @@ The missing encoder to encode android.graphics.Bitmap to Windows Bitmap (*.bmp)
 1. Add the Maven Central repository (if not exist) to your build file:
 ```groovy
 repositories {
+    ...
     mavenCentral()
 }
 ```
@@ -12,6 +13,7 @@ repositories {
 2. Add the dependency:
 ```groovy
 dependencies {
+    ...
     implementation 'com.tianscar.android:android-bmp-encoder:1.0.0'
 }
 ```
