@@ -8,14 +8,14 @@ ext {
     libName = 'Android BMP Encoder'
     libVendorName = 'Tianscar'
 
-    libVersionCode = 1
+    libVersionCode = 2
     libGroupName = 'com.tianscar.android'
-    libVersionName = '1.0.0'
+    libVersionName = '1.0.1'
 
     libSourceCompatibility = JavaVersion.VERSION_1_8
     libTargetCompatibility = JavaVersion.VERSION_1_8
 
-    libAndroidNamespace = 'com.tianscar.android.androidbmpencoder'
+    libAndroidNamespace = 'com.tianscar.android.bmpencoder'
     libAndroidCompileSdk = 33
     libAndroidMinSdk = 16
     libAndroidTargetSdk = 33

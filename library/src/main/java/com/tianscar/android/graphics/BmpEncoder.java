@@ -7,11 +7,13 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 /**
- * A utility class which can encode {@link Bitmap} to Windows Bitmap (*.bmp).
+ * The utility class which provides function to encode {@link Bitmap} to Windows Bitmap (*.bmp).
  */
 public final class BmpEncoder {
 
-    private BmpEncoder(){}
+    private BmpEncoder() {
+        throw new UnsupportedOperationException();
+    }
 
     private final static short BF_TYPE = 0x4D42;
 
@@ -180,7 +182,7 @@ public final class BmpEncoder {
      * @param stream the target output stream
      * @return true if success, false if failed
      */
-    public static boolean compress(final Bitmap bitmap, final OutputStream stream) {
+    public static boolean compress(final Bitmap bitmap, final OutputStream stream) throws IllegalArgumentException, UnsupportedOperationException {
         if (bitmap == null) throw new IllegalArgumentException("bitmap cannot be null.");
         if (stream == null) throw new IllegalArgumentException("stream cannot be null.");
         final int biWidth = bitmap.getWidth();
@@ -201,7 +203,8 @@ public final class BmpEncoder {
             putBitmapInfoHeader(biWidth, biHeight, biBitCount, biSizeImage, stream);
             putDIBData(bitmap, stream);
             return true;
-        } catch (IOException e) {
+        }
+        catch (final IOException e) {
             return false;
         }
     }

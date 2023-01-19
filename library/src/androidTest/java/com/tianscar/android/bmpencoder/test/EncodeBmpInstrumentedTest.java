@@ -1,4 +1,4 @@
-package com.tianscar.android.androidbmpencoder.test;
+package com.tianscar.android.bmpencoder.test;
 
 import android.content.Context;
 import android.graphics.Bitmap;
