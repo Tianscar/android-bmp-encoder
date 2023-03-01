@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
-import com.tianscar.android.graphics.BmpEncoder;
+import com.tianscar.android.graphics.BMPEncoder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -20,7 +20,7 @@ import java.io.IOException;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 @RunWith(AndroidJUnit4.class)
-public class EncodeBmpInstrumentedTest {
+public class EncodeBMPInstrumentedTest {
 
     @Test
     public void encodeBmp() {
@@ -32,7 +32,7 @@ public class EncodeBmpInstrumentedTest {
         try {
             if (!outFile.exists()) if (!outFile.createNewFile()) return;
             try (FileOutputStream stream = new FileOutputStream(outFile)) {
-                System.out.println(BmpEncoder.compress(bitmap, stream));
+                System.out.println(BMPEncoder.compress(bitmap, stream));
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);

@@ -9,9 +9,9 @@ import java.io.OutputStream;
 /**
  * The utility class which provides function to encode {@link Bitmap} to Windows Bitmap (*.bmp).
  */
-public final class BmpEncoder {
+public final class BMPEncoder {
 
-    private BmpEncoder() {
+    private BMPEncoder() {
         throw new UnsupportedOperationException();
     }
 
